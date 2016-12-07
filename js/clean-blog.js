@@ -31,8 +31,9 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://formspree.io/hello@root314.com",
                 type: "POST",
+                dataType: "json",
                 data: {
                     name: name,
                     phone: phone,
@@ -1009,7 +1010,7 @@ $(document).ready(function() {
 });
 
 // responsive embed videos
-$(document).ready(function () { 
+$(document).ready(function () {
     $('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 	$('iframe[src*="youtube.com"]').addClass('embed-responsive-item');
     $('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
