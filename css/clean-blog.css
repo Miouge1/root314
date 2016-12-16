@@ -5,8 +5,7 @@
  */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #404040;
 }
 p {
@@ -400,4 +399,8 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
+}
+article img {
+  margin: 0 auto;
+  display: block;
 }
