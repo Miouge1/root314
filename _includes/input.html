@@ -1,0 +1,4 @@
+<div class="form-group">
+    <label for="{{include.name}}">{{include.label}}</label>
+    <input type="{{include.type}}" ng-model="{{include.name}}" class="form-control" id="{{include.name}}" {% for param in include %}{{ param[0] }}="{{ param[1] }}" {% endfor %} />
+</div>
