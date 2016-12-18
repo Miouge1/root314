@@ -27,6 +27,7 @@ neutron net-create vlan-$VLAN_ID --provider:physical_network physnet2 \
 ```
 
 Now we have a Neutron network for the desired VLAN ID (1234 in the example) that we can use as usual:
+
 * Configure subnets
 * Connect Virtual Machines
 * Attach Neutron routers
