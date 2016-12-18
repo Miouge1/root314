@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      OpenStack's provider networks
+title:      Getting started with OpenStack's provider networks
 #subtitle:   How to connect to a
 date:       2016-12-17 22:48:00 +0100
 author:     Maxime
