@@ -52,7 +52,7 @@ Therefore you have a choice: you can buy the new generation part or the cheaper 
 
 ### Next steps
 
-Just-in-time works hand in hand with monitoring and automation, we could even imagine automatic orders triggered by the monitoring system!
+Just-in-time works hand in hand with monitoring and automation, we could even imagine automatic orders triggered by the monitoring system. Exciting!
 
 You can experiment with the calculator below to see how just-in-time methodology would fit into your environment.
 
