@@ -6,6 +6,7 @@ date:       2017-01-03 11:00:00
 author:     Maxime
 #header-img: "img/post-bg-01.jpg"
 tags: ceph software-defined-storage just-in-time
+comments: true
 ---
 Storage is one of the pillar of IT infrastructure which used to be dominated by big and costly storage appliances. As software defined storage becomes commonplace, we now have the opportunity to apply [just-in-time](https://en.wikipedia.org/wiki/Just-in-time_manufacturing) principles to the storage world. This is what I will go through in this article.
 
