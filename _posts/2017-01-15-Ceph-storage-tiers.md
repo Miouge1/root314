@@ -5,6 +5,7 @@ author:     Maxime
 tags: [ceph, production]
 header-img: "img/disks-bg.jpg"
 image: "img/disks-sq.jpg"
+date:       2017-01-15 20:00:00
 ---
 
 <!-- A simple and powerful approach to-->
