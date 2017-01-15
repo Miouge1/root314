@@ -14,21 +14,22 @@ You have several options to deploy storage tiering within Ceph. In this post I w
 ### Some basics
 
 Storage tiering means having several tiers available. The classic 3 tiered approach is:
-- fast: all flash
-- medium: disks accelerated by some flash journals
-- slow: archive disks with collocated journals
+* fast: all flash
+* medium: disks accelerated by some flash journals
+* slow: archive disks with collocated journals
 
 ### Tiered CRUSHmap
 
 First we will configure the `crush location hook`. It is a script invoked on OSD start to determine the OSD's location in the CRUSHmap.
 To make things simple I use the size of a disk to find out which tier it should belong:
-- Bigger than 6 TB &rarr; Archive drive
-- Between 1.6TB and 6TB &rarr; Disk with flash journal
-- Smaller than 1.6TB &rarr; SSD assumed
+* Bigger than 6 TB &rarr; Archive drive
+* Between 1.6TB and 6TB &rarr; Disk with flash journal
+* Smaller than 1.6TB &rarr; SSD assumed
 
 This works in most environments but you might want to adjust the script to fit your environment.
 
 Append the following code to a **copy** of [/usr/bin/ceph-crush-location](https://github.com/ceph/ceph/blob/master/src/ceph-crush-location.in), then specify its path with [osd crush location hook](http://docs.ceph.com/docs/master/rados/operations/crush-map/#custom-location-hooks) in `ceph.conf`.
+
 ```bash
 # more than 6TB for slow
 size_limit_slow=6000
@@ -49,18 +50,18 @@ echo "host=$(hostname -s)-$tier root=$tier"
 ```
 After a restart your OSDs will show up in a tier specific root, the OSD tree should look like that:
 
-- root fast
-  - host ceph-1-fast
-  - host ceph-2-fast
-  - host ceph-3-fast
-- root medium
-  - host ceph-1-medium
-  - host ceph-2-medium
-  - host ceph-3-medium
-- root slow
-  - host ceph-1-slow
-  - host ceph-2-slow
-  - host ceph-3-slow
+* root fast
+  * host ceph-1-fast
+  * host ceph-2-fast
+  * host ceph-3-fast
+* root medium
+  * host ceph-1-medium
+  * host ceph-2-medium
+  * host ceph-3-medium
+* root slow
+  * host ceph-1-slow
+  * host ceph-2-slow
+  * host ceph-3-slow
 
 ### Creating rulesets
 
@@ -113,6 +114,7 @@ ceph osd pool set archives crush_ruleset 3
 If you are doing Ceph tiering in production, you quickly realize that the output of `ceph status` shows the combined available and used space of all tiers.
 
 To find the used space of each storage tier use `ceph osd df tree`. You can reflect that in your monitoring system with the following command:
+
 ```bash
 # Show percentage space used, space used and
 ceph@ceph-1:~# sudo ceph osd df tree | grep 'root ' | awk '{print $10 ":", $7 "%" " " $5 "/" $4}'
