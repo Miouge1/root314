@@ -22,6 +22,7 @@ Storage tiering means having several tiers available. The classic 3 tiered appro
 
 First we will configure the `crush location hook`. It is a script invoked on OSD start to determine the OSD's location in the CRUSHmap.
 To make things simple I use the size of a disk to find out which tier it should belong:
+
 * Bigger than 6 TB &rarr; Archive drive
 * Between 1.6TB and 6TB &rarr; Disk with flash journal
 * Smaller than 1.6TB &rarr; SSD assumed
