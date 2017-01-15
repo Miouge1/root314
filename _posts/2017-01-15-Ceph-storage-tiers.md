@@ -14,6 +14,7 @@ You have several options to deploy storage tiering within Ceph. In this post I w
 ### Some basics
 
 Storage tiering means having several tiers available. The classic 3 tiered approach is:
+
 * fast: all flash
 * medium: disks accelerated by some flash journals
 * slow: archive disks with collocated journals
