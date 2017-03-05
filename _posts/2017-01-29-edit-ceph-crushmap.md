@@ -3,6 +3,7 @@ layout:     post
 title:      Edit the Ceph CRUSHmap
 author:     Maxime
 tags: [ceph]
+category: ceph
 header-img: "img/map-and-pen-bg.jpg"
 image: "img/map-and-pen-sq.jpg"
 date:       2017-01-29 18:00:00

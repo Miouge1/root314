@@ -3,6 +3,7 @@ layout:     post
 title:      Deploying Ceph with storage tiering
 author:     Maxime
 tags: [ceph, production]
+category: ceph
 header-img: "img/disks-bg.jpg"
 image: "img/disks-sq.jpg"
 date:       2017-01-15 20:00:00

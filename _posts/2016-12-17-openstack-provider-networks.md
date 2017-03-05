@@ -5,6 +5,7 @@ title:      Getting started with OpenStack's provider networks
 date:       2016-12-17 22:48:00 +0100
 author:     Maxime
 #header-img: "img/post-bg-01.jpg"
+category: openstack
 comments: true
 ---
 
