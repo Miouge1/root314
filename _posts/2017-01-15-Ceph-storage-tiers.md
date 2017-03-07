@@ -8,6 +8,7 @@ header-img: "img/disks-bg.jpg"
 image: "img/disks-sq.jpg"
 date:       2017-01-15 20:00:00
 comments: true
+permalink: /2017/01/15/Ceph-storage-tiers/
 ---
 
 <!-- A simple and powerful approach to-->

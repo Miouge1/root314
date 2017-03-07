@@ -8,6 +8,7 @@ header-img: "img/map-and-pen-bg.jpg"
 image: "img/map-and-pen-sq.jpg"
 date:       2017-01-29 18:00:00
 comments: true
+permalink: /2017/01/29/edit-ceph-crushmap/
 ---
 
 The CRUSHmap, as suggested by the name, is a map of your storage cluster. This map is necessary for the CRUSH algorithm to determine data placements. But Ceph's CRUSHmap is stored in binary form. So how to easily change it?
