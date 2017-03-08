@@ -8,6 +8,7 @@ image: "img/network2-sq.jpg"
 tags: [network, wdm]
 category: network
 comments: true
+permalink: /network/2017/03/05/the-basics-of-wdm/
 ---
 ---
 Wavelength Division Multiplexing (WDM) is a multiplexing method which uses different colors (or wavelengths) of light. Where traditional optics allow a single channel of communication on a fiber pair, WDM deployments allow to carry up to 96 channels on a single fiber pair. Channels can support different technologies and different speeds, for example you can mix 1G Ethernet, 10G Ethernet and 4G Fiber Channel on the same fiber run.
