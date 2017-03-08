@@ -1,0 +1,18 @@
+---
+layout: page
+title: "Page not found"
+description: "Oups something went wrong."
+permalink: /404.html
+---
+
+<p>Oups something went wrong, we didn't find the page you are looking for. Don't panic and head over to <a href="{{ site.url }}">the main page</a></p>
+
+
+<script>
+window.setTimeout(function(){
+
+        // Move to a new location or you can do something else
+        window.location.href = "{{ site.url }}";
+
+    }, 500);
+</script>
