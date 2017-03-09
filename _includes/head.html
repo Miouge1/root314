@@ -27,5 +27,9 @@
 
     {% feed_meta %}
     {% seo %}
-
+    <!-- Preload img header -->
+    <style>
+    .intro-header {
+      background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+    }</style>
 </head>
