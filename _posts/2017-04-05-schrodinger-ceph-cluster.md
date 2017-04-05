@@ -5,7 +5,7 @@ subtitle:   Working with asymetric Ceph nodes in small clusters
 author:     Maxime
 tags: [ceph]
 header-img: "img/disk-and-micro-sd-bg.jpg"
-image: "img/disks-and-micro-sd-sq.jpg"
+image: "img/disk-and-micro-sd-sq.jpg"
 date:       2017-04-05 21:00:00
 category: ceph
 comments: true
