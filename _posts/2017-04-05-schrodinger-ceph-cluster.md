@@ -6,7 +6,7 @@ author:     Maxime
 tags: [ceph]
 header-img: "img/disk-and-micro-sd-bg.jpg"
 image: "img/disk-and-micro-sd-sq.jpg"
-date:       2017-04-05 21:00:00
+#date:       2017-04-05 21:00:00
 category: ceph
 comments: true
 ---
@@ -39,7 +39,7 @@ The problem with this setup is that the **usable capacity is  lower than expecte
 
 The table below shows the space usage when you try to to fill this cluster.
 
-| Server | Disks |Percentage of total capacity| Used space | Available space |
+| Server | Disks |% of Total| Used | Available |
 |--------|---------------|--------------------|
 |  ceph1 | 10x2TB | 16.7% |20 TB         | 0 TB               |
 |  ceph2 | 10x2TB | 16.7% |20 TB         | 0 TB               |
@@ -62,7 +62,7 @@ That's right, but in practice that would disable the data protection (1 copy = n
 #### Equilibrate the cluster
 The most practical way to address this is to equilibrate the servers. We can swap half of the 2TB drives in ceph3 with half of the 6 TB drives in ceph4.
 
-| Server | 2 TB drive  | 6 TB drive |Percentage of total capacity|
+| Server | 2 TB drive  | 6 TB drive | % of Total|
 |--------|-------------|--------------------|
 |  ceph1 | 10         | 0               | 16.7% |
 |  ceph2 | 10         | 0               | 16.7% |
