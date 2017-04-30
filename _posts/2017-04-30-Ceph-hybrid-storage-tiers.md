@@ -13,7 +13,7 @@ In a previous post I showed you [how to deploy storage tiering for Ceph]({{site.
 
 ## What is hybrid storage?
 
-Hybrid storage is a combination of two other storage tiers like SSD and HDD. In Ceph terms that means that the copies of each objects are located in different tiers. Maybe 1 copy on SSD and 2 copies on HDDs.
+Hybrid storage is a combination of two different storage tiers like SSD and HDD. In Ceph terms that means that the copies of each objects are located in different tiers - maybe 1 copy on SSD and 2 copies on HDDs.
 
 The idea is to keep 1 copy of the data on a high performance tier (usually SSD or NVMe) and 2 additional copies on a lower cost tier (usually HDDs) in order to improve the read performance at a lower cost.
 
