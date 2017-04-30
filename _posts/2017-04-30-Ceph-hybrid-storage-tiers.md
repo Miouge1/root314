@@ -9,7 +9,7 @@ category: ceph
 comments: true
 ---
 
-In a previous post I showed you how to deploy storage tiering for Ceph, today I will explain how to setup hybrid storage tiers.
+In a previous post I showed you [how to deploy storage tiering for Ceph]({{site.url}}/2017/01/15/Ceph-storage-tiers/), today I will explain how to setup hybrid storage tiers.
 
 ## What is hybrid storage?
 
