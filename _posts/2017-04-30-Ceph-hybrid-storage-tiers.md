@@ -24,8 +24,8 @@ The following diagram explains the difference between read and write I/O, when u
 ## How to set it up?
 
 To get this to work in Ceph, we create a two step storage policy:
-- First step: choose the primary OSD (`firstn 1`) in the high performance tier, "root ssd" in the example
-- Second step: choose the rest of the OSDs (`firstn -1`) in the low performance tier, "root hdd" in the example
+- First step: choose the primary OSD (`firstn 1`) in the high performance tier, "root-ssd" in the example
+- Second step: choose the rest of the OSDs (`firstn -1`) in the low performance tier, "root-hdd" in the example
 
 Assuming a replication factor of 3, the following Ceph ruleset will place 1 copy of each object on SSD and 2 copies on HDDs.
 
@@ -36,10 +36,10 @@ rule hybrid {
   type replicated
   min_size 1
   max_size 10
-  step take ssd
+  step take root-ssd
   step chooseleaf firstn 1 type host
   step emit
-  step take hdd
+  step take root-hdd
   step chooseleaf firstn -1 type host
   step emit
 }
