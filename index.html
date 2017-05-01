@@ -17,12 +17,10 @@ description: "Software Defined Engineer"
 
     </a>
     {% if post.image %}
-    <div><img src="/{{ post.image }}" style="cursor: auto; float: left; margin: 1em 1em 1em 0; max-width: 6em; max-height: 6em;"/></div>
+    <img src="/{{ post.image }}" style="cursor: auto; float: left; margin: 10px 1em 1em 0; max-width: 6em; max-height: 6em;"/>
     {% endif %}
-    <div>
-      {{ post.excerpt }}
-      <p class="post-meta" style="float: right;">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-    </div>
+    {{ post.excerpt }}
+    <p class="post-meta" style="float: right;">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
 <hr style="clear: both;">
 {% endfor %}
