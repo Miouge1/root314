@@ -228,7 +228,15 @@ hr.small {
   font-weight: 300;
   margin-bottom: 10px;
 }
+.post-preview > .image-preview {
+  cursor: auto;
+  float: left;
+  margin: 10px 1em 1em 0;
+  max-width: 6em;
+  max-height: 6em;
+}
 .post-preview > .post-meta {
+  float: right;
   color: #808080;
   font-size: 18px;
   font-style: italic;
