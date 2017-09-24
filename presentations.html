@@ -1,0 +1,13 @@
+---
+layout: page
+title: Presentations
+#description: "Maxime Guyot - Software Defined Engineer"
+header-img: "img/about-bg.jpg"
+---
+
+
+<ul>
+{% for p in site.presentations %}
+   <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+{% endfor %}
+</ul>
