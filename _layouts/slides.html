@@ -64,7 +64,8 @@
       <div class="slides">
         {% for slide in site.slides  %}
           {% if slide.url contains page.folder %}
-          <section>
+          <section{% if slide.background-image %} data-background-image="{{slide.background-image}}"  data-background-position="{{slide.background-position}}" data-background-size="{{slide.background-size}}" data-background-repeat="{{slide.background-repeat}}"{% endif %}>
+
            {{ slide.content | markdownify }}
           </section>
           {% endif %}
