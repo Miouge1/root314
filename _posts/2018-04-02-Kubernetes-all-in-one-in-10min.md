@@ -4,7 +4,8 @@ title:      Kubernetes All-In-One in 10 minutes
 #subtitle:   How to connect to a
 date:       2018-04-02 18:00:00
 author:     Maxime
-#header-img: "img/post-bg-01.jpg"
+header-img: "img/cube-bg.jpg"
+image: "img/cube-sq.jpg"
 tags: [kubernetes, kubespray]
 category: kubernetes
 ---
