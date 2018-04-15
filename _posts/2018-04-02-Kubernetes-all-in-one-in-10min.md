@@ -25,7 +25,7 @@ vagrant up
 
 If you prefer to run it with a cloud provider instead of running things locally simply pass the [cloud-init.yml](https://github.com/RootPi314/kubespray-aio/blob/master/cloud-init.yml) file as `--user-data`.
 
-## Do It Yourself & behind the scene
+## Do It Yourself & behind the Scene
 Finally, if you want to get your hands dirty you'll need an Ubuntu 16.04 server or VM, then run:
 ```
 git clone git clone https://github.com/RootPi314/kubespray-aio.git
@@ -33,6 +33,11 @@ cd kubespray-aio
 ./install.sh
 ```
 
-Depending on the performance of the server you should g
+This should take around 10 minutes depending your computer and internet connection. After which `kubectl get nodes` will show you a ready cluster:
+```
+$ kubectl get nodes
+NAME        STATUS    ROLES         AGE       VERSION
+localhost   Ready     master,node   5m       v1.9.2+coreos.0
+```
 
-Documentation and info available on [GitHub.com/RootPi314/kubespray-aio](https://github.com/RootPi314/kubespray-aio)
+More documentation and info available on [GitHub.com/RootPi314/kubespray-aio](https://github.com/RootPi314/kubespray-aio)
