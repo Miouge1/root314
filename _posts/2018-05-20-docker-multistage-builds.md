@@ -3,8 +3,8 @@ layout:     post
 title:      Docker multi stage builds
 author:     Maxime
 date:       2018-05-20 18:00:00
-#header-img: "img/disks-bg.jpg"
-#image: "img/disks-sq.jpg"
+header-img: "img/container-bg.jpg"
+image: "img/container-sq.jpg"
 tags: [docker]
 category: docker
 comments: true
