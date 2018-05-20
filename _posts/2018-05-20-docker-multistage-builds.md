@@ -21,7 +21,7 @@ The `Dockerfile` below is an example showing this in action for a Go application
 The resulting runtime image is only 1.86MB (!) and should be the *absolute minimum* to run the application.
 
 ##### app.go
-```go
+```
 package main
 
 import (
