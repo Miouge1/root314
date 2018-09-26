@@ -11,7 +11,6 @@ comments: true
 permalink: /2017/01/15/Ceph-storage-tiers/
 ---
 
-<!-- A simple and powerful approach to-->
 You have several options to deploy storage tiering within Ceph. In this post I will show you a simple yet powerful approach to automatically update the CRUSHmap and create storage policies.
 
 ### Some basics
@@ -127,3 +126,7 @@ fast: 50.11% 1169G/2332G
 medium: 23.28% 3059G/13142G
 slow: 10.19% 6153G/60383G
 ```
+
+## Edit
+
+Since Ceph Luminious there is native support for storage tiering under the name [device classes](https://ceph.com/community/new-luminous-crush-device-classes/).

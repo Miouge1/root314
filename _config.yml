@@ -18,6 +18,8 @@ collections:
   slides:
   presentations:
     output: true
+  trainings:
+    output: true
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
