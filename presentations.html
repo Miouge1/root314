@@ -8,6 +8,6 @@ header-img: "img/about-bg.jpg"
 
 <ul>
 {% for p in site.presentations %}
-   <li>{{p.event}}: <a href="{{ p.url }}">{{ p.title }}</a></li>
+<li>{{p.event}}: <a href="{% if p.link %}{{ p.link }}{% else %}{{ p.url }}{% endif %}">{{ p.title }}</a></li>
 {% endfor %}
 </ul>
