@@ -73,12 +73,12 @@ I recommend you to first update the CRUSHmap, this will start the data re-balanc
 
 ```bash
 # Move 5x2TB OSDs to ceph4
-for i in {20..25}
+for i in 20 21 22 23 24
 do
   ceph osd crush set osd.$i 2.0 root=default host=ceph4
 done
 # Move 5x6TB OSDs to ceph3
-for i in {30..35}
+for i in 30 31 32 33 34
 do
   ceph osd crush set osd.$i 6.0 root=default host=ceph3
 done
